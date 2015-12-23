@@ -29,6 +29,7 @@ This setup takes care of my main music playing needs. I can do the following in 
   cp -r "Play with mpd.workflow" ~/Library/Services
   cp -r "Show mpd status.workflow" "~/Library/Application Support/Quicksilver/Workflows"
   ```
+  Note: The "(Growl)" versions use Growl rather than native notifications but are otherwise identical.
 * If you installed LaunchRocket, add `mpd.plist` (and, optionally, `osxmpdkeys.plist`) using its "Add .plist" button. Otherwise, also from this repo's directory:
 
   ```
