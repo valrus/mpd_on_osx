@@ -41,14 +41,15 @@ This setup takes care of my main music playing needs. I can do the following in 
   ```
   cp "Play Track with mpd.scpt" "~/Library/Application Support/Quicksilver/Actions"
   ```
-* Install `mpd`'s config file and create its data files:
+* Edit the `mpd` config file `mpd.conf` that I included in this repo so that the `music_directory` entry (the first line) has a path to your iTunes music library.
+* Install `mpd.conf` and create its data files:
 
   ```
   mkdir ~/.mpd
   cp mpd.conf ~/.mpd
   cd ~/.mpd
   mkdir playlists
-  touch mpd.db mpd.log mpd.pid mpdstate
+  touch database pid state sticker.sql
   ```
 
 
