@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>381</string>
+	<string>419</string>
 	<key>AMApplicationVersion</key>
-	<string>2.4</string>
+	<string>2.6</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -64,8 +64,6 @@
 				</array>
 				<key>arguments</key>
 				<dict/>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -117,9 +115,9 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>mpc clear &gt; /dev/null
-mpc findadd album "$1"
-mpc play &gt; /dev/null
+					<string>/usr/local/bin/mpc clear &gt; /dev/null
+/usr/local/bin/mpc findadd album "$1"
+/usr/local/bin/mpc play &gt; /dev/null
 echo "Playing $1"</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -233,7 +231,7 @@ echo "Playing $1"</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:491.000000</string>
+				<string>309.000000:319.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -248,28 +246,27 @@ echo "Playing $1"</string>
 					<key>Container</key>
 					<string>List</string>
 					<key>Optional</key>
-					<true/>
+					<false/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.object</string>
+						<string>*</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>2.1.3</string>
+				<string>v.1.0.2</string>
 				<key>AMApplication</key>
 				<array>
-					<string>Unknown</string>
+					<string>Automator</string>
 				</array>
 				<key>AMParameterProperties</key>
 				<dict>
-					<key>notificationDescription</key>
-					<dict/>
-					<key>notificationTitle</key>
-					<dict/>
-					<key>priority</key>
-					<dict/>
-					<key>sticky</key>
-					<dict/>
+					<key>variableUUID</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<false/>
+						<key>selectedVariableUUID</key>
+						<string>3E4B0B3D-91BC-4FF5-875E-58D04FA22036</string>
+					</dict>
 				</dict>
 				<key>AMProvides</key>
 				<dict>
@@ -277,65 +274,51 @@ echo "Playing $1"</string>
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.object</string>
+						<string>*</string>
 					</array>
 				</dict>
 				<key>AMRequiredResources</key>
-				<array>
-					<dict>
-						<key>Display Name</key>
-						<string></string>
-						<key>Resource</key>
-						<string>com.Growl.GrowlHelperApp</string>
-						<key>Type</key>
-						<string>application</string>
-						<key>Version</key>
-						<string>1.1</string>
-					</dict>
-				</array>
+				<array/>
 				<key>ActionBundlePath</key>
-				<string>/Volumes/Macintosh HD/Applications/Growl.app/Contents/Library/Automator/Show Growl Notification.action</string>
+				<string>/System/Library/Automator/Set Value of Variable.action</string>
 				<key>ActionName</key>
-				<string>Show Growl Notification</string>
+				<string>Set Value of Variable</string>
 				<key>ActionParameters</key>
 				<dict>
-					<key>notificationDescription</key>
-					<string></string>
-					<key>notificationTitle</key>
-					<string>mpd</string>
-					<key>priority</key>
-					<integer>0</integer>
-					<key>sticky</key>
-					<false/>
+					<key>variableUUID</key>
+					<string>3E4B0B3D-91BC-4FF5-875E-58D04FA22036</string>
 				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.growl.GrowlAction</string>
+				<string>com.apple.Automator.Set_Value_of_Variable</string>
 				<key>CFBundleVersion</key>
-				<string>2.1.3</string>
+				<string>1.0.2</string>
 				<key>CanShowSelectedItemsWhenRun</key>
-				<false/>
+				<true/>
 				<key>CanShowWhenRun</key>
 				<true/>
 				<key>Category</key>
 				<array>
-					<string>Utility</string>
+					<string>AMCategoryUtilities</string>
 				</array>
 				<key>Class Name</key>
-				<string>AMAppleScriptAction</string>
+				<string>Set_Value_of_Variable</string>
 				<key>InputUUID</key>
-				<string>30E60145-4CF8-4355-AF1A-EB70827B5907</string>
+				<string>DCB2CB09-1B4D-490C-A9FD-E22D4D7D3165</string>
 				<key>Keywords</key>
 				<array>
-					<string>Growl</string>
-					<string>Notification</string>
+					<string>variable</string>
+					<string>binding</string>
+					<string>input</string>
+					<string>output</string>
+					<string>storage</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>5CD52F9A-6546-47A5-97CB-4F33421CFFD8</string>
+				<string>47D3689E-C4F0-478E-9A08-D4193A2EC9E5</string>
 				<key>UUID</key>
-				<string>5729659A-38A4-40B4-9F84-1D1FF5CCE908</string>
+				<string>5E3291BA-6835-46CC-A2F4-D596EFD7C61F</string>
 				<key>UnlocalizedApplications</key>
 				<array>
-					<string>GrowlHelperApp</string>
+					<string>Automator</string>
 				</array>
 				<key>arguments</key>
 				<dict>
@@ -344,7 +327,118 @@ echo "Playing $1"</string>
 						<key>default value</key>
 						<string></string>
 						<key>name</key>
-						<string>notificationTitle</string>
+						<string>variableUUID</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>309.000000:425.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array/>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>v.1.0</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>message</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>$(3E4B0B3D-91BC-4FF5-875E-58D04FA22036)</string>
+						</array>
+					</dict>
+					<key>subtitle</key>
+					<dict/>
+					<key>title</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>mpd</string>
+						</array>
+					</dict>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array/>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Display Notification.action</string>
+				<key>ActionName</key>
+				<string>Display Notification</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>message</key>
+					<string>$(3E4B0B3D-91BC-4FF5-875E-58D04FA22036)</string>
+					<key>subtitle</key>
+					<string></string>
+					<key>title</key>
+					<string>mpd</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.Display-Notification</string>
+				<key>CFBundleVersion</key>
+				<string>1.0</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMDisplayNotificationAction</string>
+				<key>InputUUID</key>
+				<string>C92947F7-13A2-43A2-901A-EC2E7C628126</string>
+				<key>Keywords</key>
+				<array/>
+				<key>OutputUUID</key>
+				<string>319868EA-3642-4E25-BDE7-DFAB9B3D7D4C</string>
+				<key>UUID</key>
+				<string>9B1D4341-9B62-4C1D-8710-A184C716D0AC</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>subtitle</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -355,9 +449,9 @@ echo "Playing $1"</string>
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<integer>0</integer>
+						<string></string>
 						<key>name</key>
-						<string>priority</string>
+						<string>title</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -368,9 +462,9 @@ echo "Playing $1"</string>
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<string></string>
 						<key>name</key>
-						<string>sticky</string>
+						<string>message</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -378,26 +472,13 @@ echo "Playing $1"</string>
 						<key>uuid</key>
 						<string>2</string>
 					</dict>
-					<key>3</key>
-					<dict>
-						<key>default value</key>
-						<string></string>
-						<key>name</key>
-						<string>notificationDescription</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>3</string>
-					</dict>
 				</dict>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:308.000000</string>
+				<string>309.000000:615.000000</string>
 				<key>nibPath</key>
-				<string>/Volumes/Macintosh HD/Applications/Growl.app/Contents/Library/Automator/Show Growl Notification.action/Contents/Resources/main.nib</string>
+				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -405,14 +486,21 @@ echo "Playing $1"</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>6B10686E-97AB-4501-B9FA-5E521AB2C8D0</key>
+		<key>25800473-A148-46E5-987E-6499B481BBD7</key>
+		<dict>
+			<key>from</key>
+			<string>5E3291BA-6835-46CC-A2F4-D596EFD7C61F - 5E3291BA-6835-46CC-A2F4-D596EFD7C61F</string>
+			<key>to</key>
+			<string>9B1D4341-9B62-4C1D-8710-A184C716D0AC - 9B1D4341-9B62-4C1D-8710-A184C716D0AC</string>
+		</dict>
+		<key>855E728F-7AFD-4CF3-847B-5DE619D7A884</key>
 		<dict>
 			<key>from</key>
 			<string>94F23683-4D44-4F9B-BAB6-4E2E9B6DF625 - 94F23683-4D44-4F9B-BAB6-4E2E9B6DF625</string>
 			<key>to</key>
-			<string>5729659A-38A4-40B4-9F84-1D1FF5CCE908 - 5729659A-38A4-40B4-9F84-1D1FF5CCE908</string>
+			<string>5E3291BA-6835-46CC-A2F4-D596EFD7C61F - 5E3291BA-6835-46CC-A2F4-D596EFD7C61F</string>
 		</dict>
-		<key>D955405E-B063-4BA8-91E0-FAC564E9458B</key>
+		<key>A21A4188-E217-4337-83F7-1957F2EA4CAF</key>
 		<dict>
 			<key>from</key>
 			<string>F8BD6BCF-E4D2-4BF2-847E-C10A73C334EC - F8BD6BCF-E4D2-4BF2-847E-C10A73C334EC</string>
@@ -420,6 +508,17 @@ echo "Playing $1"</string>
 			<string>94F23683-4D44-4F9B-BAB6-4E2E9B6DF625 - 94F23683-4D44-4F9B-BAB6-4E2E9B6DF625</string>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>3E4B0B3D-91BC-4FF5-875E-58D04FA22036</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Storage</string>
+			<key>name</key>
+			<string>mpd output</string>
+		</dict>
+	</array>
 	<key>workflowMetaData</key>
 	<dict>
 		<key>serviceApplicationBundleID</key>

@@ -14,7 +14,7 @@
 	<array>
 		<string>/usr/local/bin/mpd</string>
 		<string>--no-daemon</string>
-		<string>~/.mpdconf</string>
+                <string>~/.mpd/mpd.conf</string>
 	</array>
 </dict>
 </plist>
