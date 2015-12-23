@@ -3,6 +3,7 @@
 ## What is this?
 Tools for making the playing of albums, organized by iTunes, using [mpd](http://www.musicpd.org) on OS X downright pleasant.
 Well. Pleasant-ish.
+See [my blog post about it](http://ian.mccowan.space/2015/12/21/MPD_OSX/) for more background info.
 
 This setup takes care of my main music playing needs. I can do the following in very few keystrokes:
 * Search and play albums that iTunes knows about using Quicksilver's fuzzy searching
